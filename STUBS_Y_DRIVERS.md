@@ -382,3 +382,45 @@ npm test -- --testPathPattern="stubs"
 # Solo drivers
 npm test -- --testPathPattern="drivers"
 ```
+
+---
+
+## Nuevos ejemplos de integracion guiada
+
+Se agrego una carpeta nueva con ejemplos enfocados en pruebas de integracion usando stubs y drivers, con comentarios detallados para usar como plantilla en actividades futuras:
+
+```text
+src/tests/integracion-guia/
+├── README.md
+├── checkoutConPago.integracion.test.js
+└── onboardingConPrimeraCompra.integracion.test.js
+```
+
+### Que aprenderas en estos ejemplos
+
+- Como hacer que el test actue como DRIVER del flujo completo.
+- Como mantener modulos reales de negocio en la integracion.
+- Como usar STUBS solo en bordes externos (DB, email, pasarela).
+- Como validar resultados finales y tambien las interacciones con dependencias.
+
+### Ejecutar solo estos ejemplos
+
+```bash
+npm test -- --testPathPattern="integracion-guia"
+```
+
+---
+
+## Guia equivalente en C#
+
+Tambien se agrego una version en C# con xUnit + Moq en una carpeta separada para practicar exactamente los mismos conceptos en otro lenguaje:
+
+```text
+csharp-integracion-guia/
+```
+
+Incluye:
+
+- servicios de negocio integrados;
+- tests como DRIVER;
+- Moq como STUB de dependencias externas.
