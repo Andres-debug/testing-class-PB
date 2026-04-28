@@ -23,3 +23,11 @@ Esta carpeta contiene ejemplos orientados a practicas futuras donde se quiere:
 3. Conserva estructura AAA (Arrange, Act, Assert).
 4. Mantiene modulos reales en el flujo y stubbea solo bordes externos.
 5. Verifica tambien interacciones (`toHaveBeenCalledWith`) ademas de resultado final.
+
+## Guia complementaria: rendimiento con k6
+
+Para documentacion de instalacion y ejemplos ejecutables de pruebas de carga y estres con APIs publicas, revisa:
+
+- `src/tests/performance-k6/README.md`
+- `src/tests/performance-k6/load-jsonplaceholder.js`
+- `src/tests/performance-k6/stress-jsonplaceholder.js`
