@@ -1,0 +1,157 @@
+{
+    "metrics": {
+        "checks": {
+            "fails": 0,
+            "passes": 20,
+            "thresholds": {
+                "rate>0.99": false
+            },
+            "value": 1
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 35.51899999999993,
+            "avg": 6.458,
+            "min": 0,
+            "med": 0,
+            "max": 64.58,
+            "p(90)": 6.457999999999977
+        },
+        "http_req_waiting": {
+            "avg": 52.11129000000001,
+            "min": 50.6976,
+            "med": 51.89065,
+            "max": 53.7186,
+            "p(90)": 53.623470000000005,
+            "p(95)": 53.671035
+        },
+        "vus": {
+            "value": 1,
+            "min": 1,
+            "max": 1
+        },
+        "iteration_duration": {
+            "p(90)": 1179.92256,
+            "p(95)": 1204.17148,
+            "avg": 1130.2082999999998,
+            "min": 1104.3223,
+            "med": 1106.4671,
+            "max": 1228.4204
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 10,
+            "thresholds": {
+                "rate<0.01": false
+            },
+            "value": 0
+        },
+        "http_req_duration{expected_response:true}": {
+            "max": 53.7186,
+            "p(90)": 53.623470000000005,
+            "p(95)": 53.671035,
+            "avg": 52.47819,
+            "min": 51.2499,
+            "med": 52.6248
+        },
+        "data_sent": {
+            "count": 2174,
+            "rate": 384.70784544760465
+        },
+        "http_reqs": {
+            "count": 10,
+            "rate": 1.7695853056467556
+        },
+        "vus_max": {
+            "min": 1,
+            "max": 1,
+            "value": 1
+        },
+        "http_req_duration": {
+            "avg": 52.47819,
+            "min": 51.2499,
+            "med": 52.6248,
+            "max": 53.7186,
+            "p(90)": 53.623470000000005,
+            "p(95)": 53.671035,
+            "thresholds": {
+                "p(95)<800": false
+            }
+        },
+        "http_req_receiving": {
+            "max": 0.6113,
+            "p(90)": 0.5269699999999999,
+            "p(95)": 0.5691349999999998,
+            "avg": 0.16342999999999996,
+            "min": 0,
+            "med": 0
+        },
+        "iterations": {
+            "count": 5,
+            "rate": 0.8847926528233778
+        },
+        "http_req_blocked": {
+            "med": 0,
+            "max": 120.9885,
+            "p(90)": 12.098849999999958,
+            "p(95)": 66.54367499999987,
+            "avg": 12.09885,
+            "min": 0
+        },
+        "http_req_sending": {
+            "min": 0,
+            "med": 0,
+            "max": 0.7875,
+            "p(90)": 0.7041599999999999,
+            "p(95)": 0.7458299999999999,
+            "avg": 0.20346999999999998
+        },
+        "http_req_connecting": {
+            "avg": 4.7700000000000005,
+            "min": 0,
+            "med": 0,
+            "max": 47.7,
+            "p(90)": 4.769999999999984,
+            "p(95)": 26.23499999999995
+        },
+        "data_received": {
+            "rate": 2843.0157520520775,
+            "count": 16066
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "GET /posts/1 status 200": {
+                    "name": "GET /posts/1 status 200",
+                    "path": "::GET /posts/1 status 200",
+                    "id": "a61c4790ba8a71fbdab76878c8193a5b",
+                    "passes": 5,
+                    "fails": 0
+                },
+                "GET /posts/1 tiene id=1": {
+                    "name": "GET /posts/1 tiene id=1",
+                    "path": "::GET /posts/1 tiene id=1",
+                    "id": "7cf723aebc26576342cf044a158b2d26",
+                    "passes": 5,
+                    "fails": 0
+                },
+                "GET /comments status 200": {
+                    "passes": 5,
+                    "fails": 0,
+                    "name": "GET /comments status 200",
+                    "path": "::GET /comments status 200",
+                    "id": "8c8cad8244566a513bef998193263d2e"
+                },
+                "GET /comments devuelve arreglo": {
+                    "name": "GET /comments devuelve arreglo",
+                    "path": "::GET /comments devuelve arreglo",
+                    "id": "b20e4e9e5418a0944bcaae75c74d27e1",
+                    "passes": 5,
+                    "fails": 0
+                }
+            }
+    }
+}
