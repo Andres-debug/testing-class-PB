@@ -4,21 +4,21 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-      "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
-      "k6:load": "k6 run src/tests/performance-k6/load-jsonplaceholder.js",
-      "k6:stress": "k6 run src/tests/performance-k6/stress-jsonplaceholder.js",
-      "k6:load:mixed": "k6 run src/tests/performance-k6/load-mixed-workload.js",
-      "k6:stress:ramp": "k6 run src/tests/performance-k6/stress-ramp-to-failure.js",
-      "k6:load:mixed:export": "k6 run src/tests/performance-k6/load-mixed-workload.js --summary-export src/tests/performance-k6/results/load-mixed-summary.json",
-      "k6:stress:ramp:export": "k6 run src/tests/performance-k6/stress-ramp-to-failure.js --summary-export src/tests/performance-k6/results/stress-ramp-summary.json",
-      "k6:report:load": "node src/tests/performance-k6/generar-informe-k6.mjs src/tests/performance-k6/results/load-mixed-summary.json src/tests/performance-k6/results/informe-load-mixed.md \"Informe Carga Mixta\" \"Local Windows\"",
-      "k6:report:stress": "node src/tests/performance-k6/generar-informe-k6.mjs src/tests/performance-k6/results/stress-ramp-summary.json src/tests/performance-k6/results/informe-stress-ramp.md \"Informe Estres Rampa\" \"Local Windows\""
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
+    "k6:load": "k6 run src/tests/performance-k6/load-jsonplaceholder.js",
+    "k6:stress": "k6 run src/tests/performance-k6/stress-jsonplaceholder.js",
+    "k6:load:mixed": "k6 run src/tests/performance-k6/load-mixed-workload.js",
+    "k6:stress:ramp": "k6 run src/tests/performance-k6/stress-ramp-to-failure.js",
+    "k6:load:mixed:export": "k6 run src/tests/performance-k6/load-mixed-workload.js --summary-export src/tests/performance-k6/results/load-mixed-summary.json",
+    "k6:stress:ramp:export": "k6 run src/tests/performance-k6/stress-ramp-to-failure.js --summary-export src/tests/performance-k6/results/stress-ramp-summary.json",
+    "k6:report:load": "node src/tests/performance-k6/generar-informe-k6.mjs src/tests/performance-k6/results/load-mixed-summary.json src/tests/performance-k6/results/informe-load-mixed.md \"Informe Carga Mixta\" \"Local Windows\"",
+    "k6:report:stress": "node src/tests/performance-k6/generar-informe-k6.mjs src/tests/performance-k6/results/stress-ramp-summary.json src/tests/performance-k6/results/informe-stress-ramp.md \"Informe Estres Rampa\" \"Local Windows\""
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
-  "devDependencies": { 
+  "devDependencies": {
     "jest": "^30.2.0"
   }
 }
